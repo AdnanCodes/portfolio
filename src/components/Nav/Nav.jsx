@@ -1,7 +1,7 @@
 import React from "react";
 
 const Nav = () => {
-  return <>Add some nav bar</>;
+  return <nav>Add big menu here</nav>;
 };
 
 export default Nav;
