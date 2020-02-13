@@ -1,8 +1,9 @@
 import React from "react";
 import { useSpring, animated, config } from "react-spring";
-import Button from "react-bootstrap/Button";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Nav from "./components/NavMenu";
+import Home from "./components/Home";
 import "./App.scss";
-import Nav from "./components/Nav/Nav";
 
 function App() {
   const props = useSpring({
@@ -11,20 +12,18 @@ function App() {
     config: config.slow
   });
   return (
-    <animated.div style={props}>
-      <div className="App">
-        <h1>Hi! I am Adnan</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere
-          aliquid enim, dicta magnam ducimus harum rem accusamus maxime, eum ab
-          sed inventore doloribus reiciendis atque quos quia. Fugit, doloribus
-          assumenda.
-        </p>
-        <Button>Testing button</Button>
+    <Router>
+      <animated.div style={props}>
         <Nav />
-        <header className="App-header">Let's make that website</header>
-      </div>
-    </animated.div>
+        <Switch>
+          <Route path="/contact">{/* Add Contact page */}</Route>
+          <Route path="/projects">{/* Project Page */}</Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </animated.div>
+    </Router>
   );
 }
 
