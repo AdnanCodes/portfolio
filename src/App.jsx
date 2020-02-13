@@ -3,6 +3,8 @@ import { useSpring, animated, config } from "react-spring";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Nav from "./components/NavMenu";
 import Home from "./components/Home";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
 import "./App.scss";
 
 function App() {
@@ -16,8 +18,12 @@ function App() {
       <animated.div style={props}>
         <Nav />
         <Switch>
-          <Route path="/contact">{/* Add Contact page */}</Route>
-          <Route path="/projects">{/* Project Page */}</Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
