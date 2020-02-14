@@ -1,0 +1,86 @@
+.hero {
+  background-image: url("./assets/mclaren.jpg");
+  background-size: 1920px 580px, cover;
+
+  .header {
+    margin: 1rem;
+    margin-top: 11rem;
+    padding: 1rem;
+    .header-text {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+      width: 25%;
+      padding: 2rem 2rem;
+    }
+    h1,
+    p {
+      color: white;
+    }
+  }
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  article {
+    padding: 2rem;
+  }
+}
+.profile {
+  width: 30%;
+  padding: 1rem;
+  border-radius: 30px;
+}
+
+.project-page {
+  h1 {
+    padding-top: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  .project {
+    background-image: linear-gradient(to bottom, orange 1%, beige 50%);
+    width: 35%;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  .project-gif {
+    width: 100%;
+    border-radius: 10px;
+  }
+}
+.contact {
+  background-image: url("./assets/p1driveaway.jpg");
+  background-size: 1920px 580px, cover;
+}
+.contact-text {
+  margin: 1rem;
+  padding: 1rem 0rem;
+  color: white;
+  width: 36%;
+}
+.contact-hero {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  padding: 4rem;
+}
+.social-link {
+  cursor: pointer;
+  .span-force {
+    display: inline;
+  }
+}
+#copy {
+  margin-left: 0.3rem;
+}
+span {
+  text-decoration: underline;
+}

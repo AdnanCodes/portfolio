@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "My personal website",
   "private": true,
   "license": "MIT",
@@ -11,9 +11,17 @@
     "url": "http://adnancodes.com"
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
+    "node-sass": "^4.13.0",
     "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.12.0",
-    "react-scripts": "3.2.0"
+    "react-icons": "^3.9.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "react-spring": "^8.0.27"
   },
   "scripts": {
     "start": "react-scripts start",
