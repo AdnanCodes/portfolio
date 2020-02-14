@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <section>
       <Jumbotron className="hero">
-        <Container className="container ">
+        <Container className="container">
           <div className="container-text text-center">
             <h1>Adnan Chowdhury</h1>
             <p>Full Stack Developer</p>
