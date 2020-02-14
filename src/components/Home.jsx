@@ -9,12 +9,12 @@ const Home = () => {
   return (
     <section>
       <Jumbotron className="hero">
-        <Container className="container">
-          <div className="container-text text-center">
+        <div className="header">
+          <div className="header-text">
             <h1>Adnan Chowdhury</h1>
             <p>Full Stack Developer</p>
           </div>
-        </Container>
+        </div>
       </Jumbotron>
       <div className="intro">
         <Image className="profile" src={profilePic} />

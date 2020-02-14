@@ -2,13 +2,15 @@
   background-image: url("./assets/mclaren.jpg");
   background-size: 1920px 580px, cover;
 
-  .container {
-    padding: 130px 0px;
-    .container-text {
+  .header {
+    margin: 1rem;
+    margin-top: 11rem;
+    padding: 1rem;
+    .header-text {
       background-color: rgba(0, 0, 0, 0.6);
       border-radius: 5px;
-      width: 37%;
-      padding: 20px;
+      width: 25%;
+      padding: 2rem 2rem;
     }
     h1,
     p {
