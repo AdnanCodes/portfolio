@@ -16,7 +16,7 @@ const Projects = () => {
 
   return (
     <section className="project-page">
-      <h1>Recent completed projects</h1>
+      <h1>Recently completed projects</h1>
       <section className="projects">
         <Jumbotron className="project">
           <Image src={Sauti} className="project-gif" />
@@ -87,7 +87,7 @@ const Projects = () => {
             >
               Learn more
             </Button>
-            <FifthModal
+            <RentechModal
               show={rentech}
               onHide={() => {
                 setRentech(false);
@@ -150,7 +150,7 @@ function goToRentech(link) {
       "_blank"
     );
   } else {
-    window.open("https://5th-wheel.now.sh/", "_blank");
+    window.open("https://rentech.netlify.com/login", "_blank");
   }
 }
 function goToBucket(link) {
