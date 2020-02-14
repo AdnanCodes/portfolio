@@ -10,7 +10,7 @@ const Projects = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
-    <section classname="project-page">
+    <section className="project-page">
       <h1>Recent completed projects</h1>
       <section className="projects">
         <Jumbotron className="project">

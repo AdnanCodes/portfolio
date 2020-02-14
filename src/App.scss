@@ -1,3 +1,22 @@
+.hero {
+  background-image: url("./assets/mclaren.jpg");
+  background-size: 1920px 580px, cover;
+
+  .container {
+    padding: 150px 0px;
+    .container-text {
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 5px;
+      width: 300px;
+      padding: 15px;
+    }
+    h1,
+    p {
+      color: white;
+    }
+  }
+}
+
 .intro {
   display: flex;
   align-items: center;
@@ -11,7 +30,9 @@
 }
 
 .project-page {
-  width: 60%;
+  h1 {
+    text-align: center;
+  }
 }
 .projects {
   display: flex;
@@ -26,4 +47,9 @@
   .project-gif {
     width: 100%;
   }
+}
+.contact-hero {
+  background-image: url("./assets/p1driveaway.jpg");
+  background-size: 1920px 580px, cover;
+  background-position: top;
 }

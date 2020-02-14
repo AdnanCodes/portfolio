@@ -3,13 +3,20 @@ import { LinkContainer } from "react-router-bootstrap";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import hero from "../assets/mclaren.jpg";
+import Container from "react-bootstrap/Container";
 import profilePic from "../assets/me.jpg";
 const Home = () => {
   return (
     <section>
-      <Image src={hero} fluid alt="McLaren P1 overshot in a race track" />
-      <Jumbotron className="intro">
+      <Jumbotron className="hero">
+        <Container className="container ">
+          <div className="container-text text-center">
+            <h1>I AM ADNAN</h1>
+            <p>Full Stack Web Developer</p>
+          </div>
+        </Container>
+      </Jumbotron>
+      <div className="intro">
         <Image className="profile" src={profilePic} rounded />
         <article>
           <h1>Hey! I am Adnan</h1>
@@ -33,7 +40,7 @@ const Home = () => {
             <Button href="/contact">Let's Connect</Button>
           </LinkContainer>
         </article>
-      </Jumbotron>
+      </div>
     </section>
   );
 };
