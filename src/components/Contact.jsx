@@ -1,8 +1,11 @@
 import React from "react";
+import Jumbotron from "react-bootstrap/Jumbotron";
+import Resume from "../assets/resume2020.pdf";
 import Container from "react-bootstrap/Container";
 import { FaTwitterSquare, FaLinkedin, FaCopy } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Button from "react-bootstrap/Button";
 const Contact = () => {
   function goToTwitter() {
     window.open("https://twitter.com/AdnanCodes", "_blank");
@@ -13,9 +16,12 @@ const Contact = () => {
   function goToEmail() {
     window.open("mailto:adnan.chowdhury@outlook.com", "_blank");
   }
+  function goToResume() {
+    window.open(Resume, "_blank");
+  }
 
   return (
-    <section className="contact">
+    <Jumbotron className="contact">
       <div className="contact-text">
         <div className="contact-hero">
           <h1>Let's get in touch</h1>
@@ -42,9 +48,14 @@ const Contact = () => {
               <span> @AdnanCodes</span>
             </h3>
           </Container>
+          <Container className="social-link">
+            <Button variant="warning" onClick={() => goToResume()}>
+              Download my Resume
+            </Button>
+          </Container>
         </div>
       </div>
-    </section>
+    </Jumbotron>
   );
 };
 
