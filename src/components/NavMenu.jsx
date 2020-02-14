@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 const TopNav = () => {
   return (
     <Navbar bg="dark" variant="dark" sticky="top">
-      <Nav fill variant="pills" defaultActiveKey="/">
+      <Nav>
         <Nav.Item>
           <LinkContainer exact to="/">
             <Nav.Link href="/">Home</Nav.Link>

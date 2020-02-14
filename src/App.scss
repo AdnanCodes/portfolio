@@ -9,3 +9,21 @@
 .profile {
   width: 30%;
 }
+
+.project-page {
+  width: 60%;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  .project {
+    width: 35%;
+    padding: 2rem;
+    margin: 2rem;
+  }
+  .project-gif {
+    width: 100%;
+  }
+}
