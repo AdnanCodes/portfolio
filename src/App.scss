@@ -35,6 +35,8 @@
 
 .project-page {
   h1 {
+    padding-top: 1rem;
+    font-weight: bold;
     text-align: center;
   }
 }
@@ -78,4 +80,7 @@
 }
 #copy {
   margin-left: 0.3rem;
+}
+span {
+  text-decoration: underline;
 }
