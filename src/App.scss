@@ -1,6 +1,6 @@
 .hero {
   background-image: url("./assets/mclaren.jpg");
-  background-size: 1920px 580px, cover;
+  background-size: 1920px 610px, cover;
 
   .container {
     padding: 150px 0px;
@@ -27,6 +27,8 @@
 }
 .profile {
   width: 30%;
+  padding: 1rem;
+  border-radius: 30px;
 }
 
 .project-page {
@@ -39,7 +41,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
   .project {
+    background-image: linear-gradient(to bottom, orange 1%, beige 50%);
     width: 35%;
     padding: 2rem;
     margin: 2rem;

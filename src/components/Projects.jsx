@@ -45,7 +45,7 @@ const Projects = () => {
             development
           </p>
           <p>
-            <Button variant="primary">Learn more</Button>
+            <Button variant="warning">Learn more</Button>
           </p>
         </Jumbotron>
         <Jumbotron className="project">
@@ -80,7 +80,7 @@ const Projects = () => {
             development
           </p>
           <p>
-            <Button variant="primary">Learn more</Button>
+            <Button variant="warning">Learn more</Button>
           </p>
         </Jumbotron>
         <Jumbotron className="project">
@@ -115,7 +115,7 @@ const Projects = () => {
             development
           </p>
           <p>
-            <Button variant="primary">Learn more</Button>
+            <Button variant="warning">Learn more</Button>
           </p>
         </Jumbotron>
         <Jumbotron className="project">
@@ -150,7 +150,7 @@ const Projects = () => {
             development
           </p>
           <p>
-            <Button variant="primary">Learn more</Button>
+            <Button variant="warning">Learn more</Button>
           </p>
         </Jumbotron>
       </section>

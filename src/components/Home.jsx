@@ -11,15 +11,14 @@ const Home = () => {
       <Jumbotron className="hero">
         <Container className="container ">
           <div className="container-text text-center">
-            <h1>I AM ADNAN</h1>
-            <p>Full Stack Web Developer</p>
+            <h1>Adnan Chowdhury</h1>
+            <p>Full Stack Developer</p>
           </div>
         </Container>
       </Jumbotron>
       <div className="intro">
-        <Image className="profile" src={profilePic} rounded />
+        <Image className="profile" src={profilePic} />
         <article>
-          <h1>Hey! I am Adnan</h1>
           <p>
             I am a full-stack web developer. I specialize in developing
             front-end applications in ReactJS and building servers using Express
@@ -37,7 +36,9 @@ const Home = () => {
             and think about improving education systems.
           </p>
           <LinkContainer to="/contact">
-            <Button href="/contact">Let's Connect</Button>
+            <Button href="/contact" variant="warning">
+              Let's Connect
+            </Button>
           </LinkContainer>
         </article>
       </div>
