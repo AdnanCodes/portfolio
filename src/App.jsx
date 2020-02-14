@@ -5,6 +5,7 @@ import Nav from "./components/NavMenu";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 import "./App.scss";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
+        <Footer />
       </animated.div>
     </Router>
   );
