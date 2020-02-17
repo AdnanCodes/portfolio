@@ -360,8 +360,8 @@ function BucketModal(props) {
           integrity
         </p>
         <p>
-          • Built numerous data validations to allow front-end develop to
-          understand their API calls
+          • Built numerous data validations to allow front-end developers to
+          easily understand their API calls
         </p>
         <p>• Built end-to-end tests using Supertest and Jest</p>
         <p>• Deployed in a production environment on Heroku</p>
