@@ -31,8 +31,13 @@ const Home = () => {
             in working in a team and a high-demand environment.
           </p>
           <p>
-            If I am not coding, I like to play video games, read books, cooking,
-            and think about improving education systems.
+            I am currently learning the Linux kernel to super charge my
+            development skills and I also started to learn Elixir, and its
+            framework, Phoenix!
+          </p>
+          <p>
+            If I am not coding, I like to play video games, read books, and
+            cooking new recipes.
           </p>
           <LinkContainer to="/contact">
             <Button href="/contact" variant="warning">
