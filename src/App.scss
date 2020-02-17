@@ -1,21 +1,26 @@
+$breakpoint-mobile: 500px;
+
 .hero {
   background-image: url("./assets/mclaren.jpg");
-  background-size: 1920px 580px, cover;
+  background-size: 1920px contain;
+  @media (max-width: $breakpoint-mobile) {
+    background-size: 500px contain;
+  }
+}
 
-  .header {
-    margin: 1rem;
-    margin-top: 11rem;
-    padding: 1rem;
-    .header-text {
-      background-color: rgba(0, 0, 0, 0.6);
-      border-radius: 5px;
-      width: 25%;
-      padding: 2rem 2rem;
-    }
-    h1,
-    p {
-      color: white;
-    }
+.header {
+  margin: 1rem;
+  margin-top: 11rem;
+  padding: 1rem;
+  .header-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    width: 25%;
+    padding: 2rem 2rem;
+  }
+  h1,
+  p {
+    color: white;
   }
 }
 
