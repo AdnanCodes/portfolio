@@ -86,9 +86,11 @@
     }
   }
   .project-buttons {
-    margin: 0 1rem;
+    margin: 0rem 1rem;
     @include responsive(phone) {
-      margin: 1rem;
+      margin: 0rem;
+      margin: 1rem 0rem;
+      margin-left: 0.18rem;
     }
   }
   .project-gif {

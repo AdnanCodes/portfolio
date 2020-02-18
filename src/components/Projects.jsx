@@ -3,7 +3,7 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 import Image from "react-bootstrap/Image";
-import { FaGithub, FaLaptop } from "react-icons/fa";
+import { FaGithub, FaLaptop, FaBookOpen, FaWindowClose } from "react-icons/fa";
 import Sauti from "../assets/SautiDemo.gif";
 import Fifth from "../assets/FifthDemo.gif";
 import Rentech from "../assets/RentechDemo.gif";
@@ -35,6 +35,7 @@ const Projects = () => {
                 setSauti(true);
               }}
             >
+              <FaBookOpen className="icon-buttons" />
               Learn more
             </Button>
             <Button
@@ -69,6 +70,7 @@ const Projects = () => {
                 setFifth(true);
               }}
             >
+              <FaBookOpen className="icon-buttons" />
               Learn more
             </Button>
             <Button
@@ -109,6 +111,7 @@ const Projects = () => {
                 setRentech(true);
               }}
             >
+              <FaBookOpen className="icon-buttons" />
               Learn more
             </Button>
             <Button
@@ -148,6 +151,7 @@ const Projects = () => {
                 setBucket(true);
               }}
             >
+              <FaBookOpen className="icon-buttons" />
               Learn more
             </Button>
             <Button
@@ -266,6 +270,7 @@ function SautiModal(props) {
           Explore the Repo
         </Button>
         <Button variant="warning" onClick={props.onHide}>
+          <FaWindowClose className="icon-buttons" />
           Close
         </Button>
       </Modal.Footer>
@@ -321,6 +326,7 @@ function FifthModal(props) {
           Explore the Repo
         </Button>
         <Button variant="warning" onClick={props.onHide}>
+          <FaWindowClose className="icon-buttons" />
           Close
         </Button>
       </Modal.Footer>
@@ -372,6 +378,7 @@ function RentechModal(props) {
           Explore The Repo
         </Button>
         <Button variant="warning" onClick={props.onHide}>
+          <FaWindowClose className="icon-buttons" />
           Close
         </Button>
       </Modal.Footer>
@@ -421,6 +428,7 @@ function BucketModal(props) {
           Explore the Repo
         </Button>
         <Button variant="warning" onClick={props.onHide}>
+          <FaWindowClose className="icon-buttons" />
           Close
         </Button>
       </Modal.Footer>
