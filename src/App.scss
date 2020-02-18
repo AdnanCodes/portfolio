@@ -95,6 +95,7 @@
 
 .icon-buttons {
   margin-right: 0.4rem;
+  font-size: 1.6rem;
 }
 .contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -123,10 +124,7 @@
   }
 }
 .social-link {
-  cursor: pointer;
-  .span-force {
-    display: inline;
-  }
+  padding: 0.3rem;
 }
 #copy {
   margin-left: 0.3rem;
