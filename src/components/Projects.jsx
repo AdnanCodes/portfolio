@@ -16,7 +16,7 @@ const Projects = () => {
 
   return (
     <section className="project-page">
-      <h1>Recently completed projects</h1>
+      <h1>Recent Projects</h1>
       <section className="projects">
         <Jumbotron className="project">
           <Image src={Sauti} className="project-gif" />

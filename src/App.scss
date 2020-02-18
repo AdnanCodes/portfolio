@@ -8,16 +8,15 @@
 }
 
 .header {
-  margin: 1rem;
-  margin-top: 11rem;
-  padding: 1rem;
+  margin-top: 3.2rem;
+  padding: 0.2rem;
+  margin-bottom: 4rem;
   @include responsive(phone) {
     margin: 0rem;
     padding: 0rem;
   }
   .header-text {
-    border-radius: 5px;
-    width: 25%;
+    width: 30%;
     @include responsive(phone) {
       display: block;
       margin: 0 auto;
@@ -25,10 +24,14 @@
       text-align: center;
       width: 90%;
     }
-  }
-  h1,
-  p {
-    color: white;
+    h1,
+    p {
+      font-size: 3.05rem;
+      color: white;
+      @include responsive(phone) {
+        font-size: 2rem;
+      }
+    }
   }
 }
 
@@ -84,7 +87,7 @@
   }
 }
 .contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/p1driveaway.jpg");
   background-size: cover;
   background-position: center;
