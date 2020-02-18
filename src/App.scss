@@ -138,12 +138,10 @@
 .social-link {
   padding: 0.3rem;
 }
-#copy {
-  margin-left: 0.3rem;
-}
-span {
-  text-decoration: underline;
+.copy-email {
+  margin-left: 0.4rem;
   @include responsive(phone) {
-    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 0.6rem;
   }
 }

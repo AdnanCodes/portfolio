@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Overlay from "react-bootstrap/Overlay";
 import Tooltip from "react-bootstrap/Tooltip";
 import Resume from "../assets/resume2020.pdf";
 import Container from "react-bootstrap/Container";
@@ -13,9 +13,10 @@ import {
   FaFilePdf
 } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import Button from "react-bootstrap/Button";
 const Contact = () => {
+  const [show, setShow] = useState(false);
+  const target = useRef(null);
   function goToTwitter() {
     window.open("https://twitter.com/AdnanCodes", "_blank");
   }
@@ -41,16 +42,27 @@ const Contact = () => {
               <IoIosMail className="icon-buttons" />
               adnan.chowdhury@outlook.com
             </Button>
-            <OverlayTrigger
-              delay={{ show: 150, hide: 400 }}
-              overlay={<Tooltip>Click to Copy</Tooltip>}
-            >
-              <span id="copy">
-                <CopyToClipboard text="adnan.chowdhury@outlook.com">
-                  <FaCopy />
-                </CopyToClipboard>
-              </span>
-            </OverlayTrigger>
+            <span>
+              <Button
+                variant="warning"
+                className="copy-email"
+                ref={target}
+                onClick={() => {
+                  setShow(!show);
+                  navigator.clipboard.writeText("adnan.chowdhury@outlook.com");
+                }}
+              >
+                <FaCopy className="icon-buttons" />
+                Copy E-mail
+              </Button>
+              <Overlay target={target.current} show={show} placement="right">
+                {props => (
+                  <Tooltip id="overlay-example" {...props}>
+                    Copied
+                  </Tooltip>
+                )}
+              </Overlay>
+            </span>
           </Container>
           <Container className="social-link">
             <Button variant="warning" onClick={() => goToResume()}>
