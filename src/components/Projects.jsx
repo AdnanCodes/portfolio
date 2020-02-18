@@ -16,7 +16,7 @@ const Projects = () => {
 
   return (
     <section className="project-page">
-      <h1>Recently completed projects</h1>
+      <h1>Recent Projects</h1>
       <section className="projects">
         <Jumbotron className="project">
           <Image src={Sauti} className="project-gif" />
@@ -36,6 +36,18 @@ const Projects = () => {
               }}
             >
               Learn more
+            </Button>
+            <Button
+              variant="warning"
+              className="project-buttons"
+              onClick={() => goToSauti("proj")}
+            >
+              <FaLaptop className="icon-buttons" />
+              Explore the Project
+            </Button>
+            <Button variant="warning" onClick={() => goToSauti("repo")}>
+              <FaGithub className="icon-buttons" />
+              Explore the Repo
             </Button>
             <SautiModal show={sauti} onHide={() => setSauti(false)} />
           </p>
@@ -58,6 +70,18 @@ const Projects = () => {
               }}
             >
               Learn more
+            </Button>
+            <Button
+              variant="warning"
+              className="project-buttons"
+              onClick={() => goToFifth("proj")}
+            >
+              <FaLaptop className="icon-buttons" />
+              Explore the Project
+            </Button>
+            <Button variant="warning" onClick={() => goToFifth("repo")}>
+              <FaGithub className="icon-buttons" />
+              Explore the Repo
             </Button>
             <FifthModal
               show={fifth}
@@ -87,6 +111,18 @@ const Projects = () => {
             >
               Learn more
             </Button>
+            <Button
+              variant="warning"
+              className="project-buttons"
+              onClick={() => goToRentech("proj")}
+            >
+              <FaLaptop className="icon-buttons" />
+              Explore the Project
+            </Button>
+            <Button variant="warning" onClick={() => goToRentech("repo")}>
+              <FaGithub className="icon-buttons" />
+              Explore the Repo
+            </Button>
             <RentechModal
               show={rentech}
               onHide={() => {
@@ -113,6 +149,18 @@ const Projects = () => {
               }}
             >
               Learn more
+            </Button>
+            <Button
+              variant="warning"
+              onClick={() => goToBucket("proj")}
+              className="project-buttons"
+            >
+              <FaLaptop className="icon-buttons" />
+              Explore the Project
+            </Button>
+            <Button variant="warning" onClick={() => goToBucket("repo")}>
+              <FaGithub className="icon-buttons" />
+              Explore the Repo
             </Button>
           </p>
           <BucketModal
@@ -210,14 +258,12 @@ function SautiModal(props) {
       </Modal.Body>
       <Modal.Footer>
         <Button variant="warning" onClick={() => goToSauti("proj")}>
-          <FaLaptop />
-          <span> </span>
+          <FaLaptop className="icon-buttons" />
           Explore the Project
         </Button>
         <Button variant="warning" onClick={() => goToSauti("repo")}>
-          <FaGithub />
-          <span> </span>
-          Explore The Repo
+          <FaGithub className="icon-buttons" />
+          Explore the Repo
         </Button>
         <Button variant="warning" onClick={props.onHide}>
           Close
@@ -267,14 +313,12 @@ function FifthModal(props) {
       </Modal.Body>
       <Modal.Footer>
         <Button variant="warning" onClick={() => goToFifth("proj")}>
-          <FaLaptop />
-          <span> </span>
+          <FaLaptop className="icon-buttons" />
           Explore the Project
         </Button>
         <Button variant="warning" onClick={() => goToFifth("repo")}>
-          <FaGithub />
-          <span> </span>
-          Explore The Repo
+          <FaGithub className="icon-buttons" />
+          Explore the Repo
         </Button>
         <Button variant="warning" onClick={props.onHide}>
           Close
@@ -320,13 +364,11 @@ function RentechModal(props) {
       </Modal.Body>
       <Modal.Footer>
         <Button variant="warning" onClick={() => goToRentech("proj")}>
-          <FaLaptop />
-          <span> </span>
+          <FaLaptop className="icon-buttons" />
           Explore the Project
         </Button>
         <Button variant="warning" onClick={() => goToRentech("repo")}>
-          <FaGithub />
-          <span> </span>
+          <FaGithub className="icon-buttons" />
           Explore The Repo
         </Button>
         <Button variant="warning" onClick={props.onHide}>
@@ -371,14 +413,12 @@ function BucketModal(props) {
       </Modal.Body>
       <Modal.Footer>
         <Button variant="warning" onClick={() => goToBucket("proj")}>
-          <FaLaptop />
-          <span> </span>
+          <FaLaptop className="icon-buttons" />
           Explore the Project
         </Button>
         <Button variant="warning" onClick={() => goToBucket("repo")}>
-          <FaGithub />
-          <span> </span>
-          Explore The Repo
+          <FaGithub className="icon-buttons" />
+          Explore the Repo
         </Button>
         <Button variant="warning" onClick={props.onHide}>
           Close

@@ -1,4 +1,8 @@
 @import "mediaQueries";
+
+.Nav-bar {
+  font-size: 1.2rem;
+}
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./assets/mclaren.jpg");
@@ -8,16 +12,15 @@
 }
 
 .header {
-  margin: 1rem;
-  margin-top: 11rem;
-  padding: 1rem;
+  margin-top: 5.2rem;
+  padding: 0.2rem;
+  margin-bottom: 6rem;
   @include responsive(phone) {
     margin: 0rem;
     padding: 0rem;
   }
   .header-text {
-    border-radius: 5px;
-    width: 25%;
+    width: 30%;
     @include responsive(phone) {
       display: block;
       margin: 0 auto;
@@ -25,10 +28,14 @@
       text-align: center;
       width: 90%;
     }
-  }
-  h1,
-  p {
-    color: white;
+    h1,
+    p {
+      font-size: 3.05rem;
+      color: white;
+      @include responsive(phone) {
+        font-size: 2rem;
+      }
+    }
   }
 }
 
@@ -78,13 +85,24 @@
       width: 90%;
     }
   }
+  .project-buttons {
+    margin: 0 1rem;
+    @include responsive(phone) {
+      margin: 1rem;
+    }
+  }
   .project-gif {
     width: 100%;
     border-radius: 10px;
   }
 }
+
+.icon-buttons {
+  margin-right: 0.4rem;
+  font-size: 1.6rem;
+}
 .contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("./assets/p1driveaway.jpg");
   background-size: cover;
   background-position: center;
@@ -94,7 +112,7 @@
   margin: 1rem;
   padding: 1rem 0rem;
   color: white;
-  width: 36%;
+  width: 45%;
   @include responsive(phone) {
     width: 90%;
     text-align: center;
@@ -110,10 +128,7 @@
   }
 }
 .social-link {
-  cursor: pointer;
-  .span-force {
-    display: inline;
-  }
+  padding: 0.3rem;
 }
 #copy {
   margin-left: 0.3rem;

@@ -36,8 +36,8 @@ const Home = () => {
             framework, Phoenix!
           </p>
           <p>
-            If I am not coding, I like to play video games, read books, and cook
-            new recipes.
+            If I am not coding, I like to play video games, read books, cook new
+            recipes, fix cars, and explore car culture.
           </p>
           <LinkContainer to="/contact">
             <Button href="/contact" variant="warning">
