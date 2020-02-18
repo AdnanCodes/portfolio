@@ -28,12 +28,18 @@
       text-align: center;
       width: 90%;
     }
-    h1,
-    p {
+    h1 {
       font-size: 3.05rem;
       color: white;
       @include responsive(phone) {
         font-size: 2rem;
+      }
+    }
+    p {
+      color: white;
+      font-size: 2.5rem;
+      @include responsive(phone) {
+        font-size: 1.5rem;
       }
     }
   }
