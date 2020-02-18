@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import "./App.scss";
+import Easter from "./components/EasterEgg";
 
 function App() {
   const props = useSpring({
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route exact path="/">
             <Home />
+          </Route>
+          <Route path="/easteregg">
+            <Easter />
           </Route>
         </Switch>
         <Footer />
