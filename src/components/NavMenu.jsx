@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 const TopNav = () => {
   return (
-    <Navbar bg="dark" variant="dark" sticky="top">
+    <Navbar bg="dark" variant="dark" sticky="top" className="Nav-bar">
       <Nav>
         <Nav.Item>
           <LinkContainer exact to="/">

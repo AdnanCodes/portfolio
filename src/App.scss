@@ -1,4 +1,8 @@
 @import "mediaQueries";
+
+.Nav-bar {
+  font-size: 1.2rem;
+}
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("./assets/mclaren.jpg");
@@ -8,9 +12,9 @@
 }
 
 .header {
-  margin-top: 3.2rem;
+  margin-top: 5.2rem;
   padding: 0.2rem;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
   @include responsive(phone) {
     margin: 0rem;
     padding: 0rem;
@@ -108,7 +112,7 @@
   margin: 1rem;
   padding: 1rem 0rem;
   color: white;
-  width: 36%;
+  width: 45%;
   @include responsive(phone) {
     width: 90%;
     text-align: center;
