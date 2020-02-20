@@ -5,6 +5,9 @@ import Button from "react-bootstrap/Button";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import profilePic from "../assets/me.jpg";
 const Home = () => {
+  console.log(
+    "\n\nHey, what did you think you find here?\n\nI guess you may heard about that easter egg.\n\nThere is a hidden route in this app, find the riddle, and solve it.\n\nYou may then put the answer in the route \n\nAlso no looking at source code\n\n"
+  );
   return (
     <section>
       <Jumbotron className="hero">

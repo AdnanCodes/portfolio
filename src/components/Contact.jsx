@@ -15,6 +15,9 @@ import {
 import { IoIosMail } from "react-icons/io";
 import Button from "react-bootstrap/Button";
 const Contact = () => {
+  console.log(
+    "\n\nOne of my favorite things\nIs to run around the park\nIf I am unhappy\nThen you might hear me bark\n\n"
+  );
   const [show, setShow] = useState(false);
   const target = useRef(null);
   function goToTwitter() {
