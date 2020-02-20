@@ -29,12 +29,12 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/easteregg">
-            <Easter />
-          </Route>
         </Switch>
         <Footer />
       </animated.div>
+      <Route path="/dog">
+        <Easter />
+      </Route>
     </Router>
   );
 }
