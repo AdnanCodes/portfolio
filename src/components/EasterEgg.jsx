@@ -21,12 +21,15 @@ const Easter = () => {
       <article className="dog-content">
         <h1>Meet Q Dog</h1>
         <p>
-          Queen Elizabeth aka Q dog. She is my roommate's dog. <br />Q has been
-          instrumental in my life to become software developer.
-          <br /> She made me get off the computer and go on walks.
-          <br /> Her energy is so infectious that you won't able to stop playing
-          with her.
-          <br />I am gonna miss her when I move away from Tennessee
+          Queen Elizabeth, aka Q, is my roommate’s dog.
+          <br />Q has been instrumental in my journey to becoming a software
+          developer.
+          <br />
+          She encouraged me to get off the computer and go on walks.
+          <br />
+          Her energy is infectious and it’s hard to say no when she wants to
+          play.
+          <br />I will miss her when I leave Tennessee.
         </p>
         <Button
           variant="warning"
