@@ -41,7 +41,6 @@ const Easter = () => {
         </Button>
       </article>
       <article className="dog-content">
-        {" "}
         <animated.div
           className="card"
           onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
