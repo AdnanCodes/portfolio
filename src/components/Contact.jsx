@@ -20,20 +20,27 @@ const Contact = () => {
   );
   const [show, setShow] = useState(false);
   const target = useRef(null);
-  function goToTwitter() {
-    window.open("https://twitter.com/AdnanCodes", "_blank");
-  }
-  function goToLinkedIn() {
-    window.open("https://www.linkedin.com/in/adnan-chowdhury/", "_blank");
-  }
-  function goToEmail() {
-    window.open("mailto:adnan.chowdhury@outlook.com", "_blank");
-  }
-  function goToGithub() {
-    window.open("https://github.com/AdnanCodes", "_blank");
-  }
-  function goToResume() {
-    window.open(Resume, "_blank");
+
+  function goToMediaLinks(str) {
+    switch (str) {
+      case "twitter":
+        window.open("https://twitter.com/AdnanCodes", "_blank");
+        break;
+      case "email":
+        window.open("mailto:adnan.chowdhury@outlook.com", "_blank");
+        break;
+      case "linkedin":
+        window.open("https://www.linkedin.com/in/adnan-chowdhury/", "_blank");
+        break;
+      case "resume":
+        window.open(Resume, "_blank");
+        break;
+      case "github":
+        window.open("https://github.com/AdnanCodes", "_blank");
+        break;
+      default:
+        break;
+    }
   }
   return (
     <Jumbotron className="contact">
@@ -41,7 +48,7 @@ const Contact = () => {
         <div className="contact-hero">
           <h1>Let's get in touch</h1>
           <Container className="social-link">
-            <Button variant="warning" onClick={() => goToEmail()}>
+            <Button variant="warning" onClick={() => goToMediaLinks("email")}>
               <IoIosMail className="icon-buttons" />
               adnan.chowdhury@outlook.com
             </Button>
@@ -68,25 +75,28 @@ const Contact = () => {
             </span>
           </Container>
           <Container className="social-link">
-            <Button variant="warning" onClick={() => goToResume()}>
+            <Button variant="warning" onClick={() => goToMediaLinks("resume")}>
               <FaFilePdf className="icon-buttons" />
               Download my Resume
             </Button>
           </Container>
           <Container className="social-link">
-            <Button variant="warning" onClick={() => goToLinkedIn()}>
+            <Button
+              variant="warning"
+              onClick={() => goToMediaLinks("linkedin")}
+            >
               <FaLinkedin className="icon-buttons" />
               adnan-chowdhury
             </Button>
           </Container>
           <Container className="social-link">
-            <Button variant="warning" onClick={() => goToGithub()}>
+            <Button variant="warning" onClick={() => goToMediaLinks("github")}>
               <FaGithub className="icon-buttons" />
               AdnanCodes
             </Button>
           </Container>
           <Container className="social-link">
-            <Button variant="warning" onClick={() => goToTwitter()}>
+            <Button variant="warning" onClick={() => goToMediaLinks("twitter")}>
               <FaTwitterSquare className="icon-buttons" />
               AdnanCodes
             </Button>
