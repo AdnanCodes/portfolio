@@ -40,8 +40,8 @@ yarn start
 
 - Website: adnancodes.com
 - Twitter: [@AdnanCodes](https://twitter.com/AdnanaCodes)
-- Github: [@AdnanCodes](https://github.com/AdnanaCodes)
-- LinkedIn: [@adnan-chowdhury](https://linkedin.com/in/adnan-chowdhury)
+- Github: [AdnanCodes](https://github.com/AdnanaCodes)
+- LinkedIn: [adnan-chowdhury](https://linkedin.com/in/adnan-chowdhury)
 
 ## Show your support
 
