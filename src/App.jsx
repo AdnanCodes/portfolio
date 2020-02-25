@@ -20,18 +20,10 @@ function App() {
       <animated.div style={props}>
         <Nav />
         <Switch>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/dog">
-            <Easter />
-          </Route>
+          <Route path="/contact" component={Contact} />
+          <Route path="/projects" component={Projects} />
+          <Route exact path="/" component={Home} />
+          <Route path="/dog" component={Easter} />
         </Switch>
         <Footer />
       </animated.div>
