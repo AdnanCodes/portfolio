@@ -4,7 +4,6 @@ import Overlay from "react-bootstrap/Overlay";
 import Tooltip from "react-bootstrap/Tooltip";
 import Resume from "../assets/resume2020.pdf";
 import Container from "react-bootstrap/Container";
-
 import {
   FaTwitterSquare,
   FaLinkedin,
@@ -21,7 +20,7 @@ const Contact = () => {
   const [show, setShow] = useState(false);
   const target = useRef(null);
 
-  function goToMediaLinks(str) {
+  const goToMediaLinks = str => {
     switch (str) {
       case "twitter":
         window.open("https://twitter.com/AdnanCodes", "_blank");
@@ -41,7 +40,7 @@ const Contact = () => {
       default:
         break;
     }
-  }
+  };
   return (
     <Jumbotron className="contact">
       <div className="contact-text">
