@@ -6,6 +6,7 @@ import React from "react";
 // Lot more research may be needed but components could be design in a reusable style with combinations of react bootstrap
 // Some of the challenges may expected. Integrated testing should be added as part
 // Blog should avoid any using routing but conditional rendering via accordion
+// Add more TODOS
 const Blog = () => {
   return <section>Let's build Blog page</section>;
 };
