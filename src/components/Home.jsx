@@ -45,6 +45,11 @@ const Home = () => {
             <Button href="/contact" variant="warning">
               Let's Connect
             </Button>
+          </LinkContainer>{" "}
+          <LinkContainer to="/projects">
+            <Button href="/projects" variant="warning">
+              Check out my projects
+            </Button>
           </LinkContainer>
         </article>
       </div>
