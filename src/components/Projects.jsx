@@ -178,7 +178,7 @@ const Projects = () => {
     </section>
   );
 };
-
+//Combined all these into single function with parametters
 function goToSauti(link) {
   if (link === "repo") {
     window.open("https://github.com/price-api", "_blank");
