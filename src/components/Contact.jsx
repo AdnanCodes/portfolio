@@ -9,7 +9,7 @@ import {
   FaLinkedin,
   FaCopy,
   FaGithub,
-  FaFilePdf
+  FaFilePdf,
 } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import Button from "react-bootstrap/Button";
@@ -20,8 +20,8 @@ const Contact = () => {
   const [show, setShow] = useState(false);
   const target = useRef(null);
 
-  const goToMediaLinks = str => {
-    switch (str) {
+  const goToMediaLinks = (links) => {
+    switch (links) {
       case "twitter":
         window.open("https://twitter.com/AdnanCodes", "_blank");
         break;
@@ -65,7 +65,7 @@ const Contact = () => {
                 Copy E-mail
               </Button>
               <Overlay target={target.current} show={show} placement="right">
-                {props => (
+                {(props) => (
                   <Tooltip id="overlay-example" {...props}>
                     Copied
                   </Tooltip>

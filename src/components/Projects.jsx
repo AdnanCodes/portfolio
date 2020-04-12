@@ -41,12 +41,15 @@ const Projects = () => {
             <Button
               variant="warning"
               className="project-buttons"
-              onClick={() => goToSauti("proj")}
+              onClick={() => goToLinks("sauti", "project")}
             >
               <FaLaptop className="icon-buttons" />
               Explore the Project
             </Button>
-            <Button variant="warning" onClick={() => goToSauti("repo")}>
+            <Button
+              variant="warning"
+              onClick={() => goToLinks("sauti", "repo")}
+            >
               <FaGithub className="icon-buttons" />
               Explore the Repo
             </Button>
@@ -76,12 +79,15 @@ const Projects = () => {
             <Button
               variant="warning"
               className="project-buttons"
-              onClick={() => goToFifth("proj")}
+              onClick={() => goToLinks("fifth", "project")}
             >
               <FaLaptop className="icon-buttons" />
               Explore the Project
             </Button>
-            <Button variant="warning" onClick={() => goToFifth("repo")}>
+            <Button
+              variant="warning"
+              onClick={() => goToLinks("fifth", "repo")}
+            >
               <FaGithub className="icon-buttons" />
               Explore the Repo
             </Button>
@@ -117,12 +123,15 @@ const Projects = () => {
             <Button
               variant="warning"
               className="project-buttons"
-              onClick={() => goToRentech("proj")}
+              onClick={() => goToLinks("rentech", "project")}
             >
               <FaLaptop className="icon-buttons" />
               Explore the Project
             </Button>
-            <Button variant="warning" onClick={() => goToRentech("repo")}>
+            <Button
+              variant="warning"
+              onClick={() => goToLinks("rentech", "repo")}
+            >
               <FaGithub className="icon-buttons" />
               Explore the Repo
             </Button>
@@ -156,13 +165,16 @@ const Projects = () => {
             </Button>
             <Button
               variant="warning"
-              onClick={() => goToBucket("proj")}
+              onClick={() => goToLinks("bucket", "project")}
               className="project-buttons"
             >
               <FaLaptop className="icon-buttons" />
               Explore the Project
             </Button>
-            <Button variant="warning" onClick={() => goToBucket("repo")}>
+            <Button
+              variant="warning"
+              onClick={() => goToLinks("bucket", "repo")}
+            >
               <FaGithub className="icon-buttons" />
               Explore the Repo
             </Button>
@@ -178,43 +190,52 @@ const Projects = () => {
     </section>
   );
 };
-//Combined all these into single function with parametters
-function goToSauti(link) {
-  if (link === "repo") {
-    window.open("https://github.com/price-api", "_blank");
-  } else {
-    window.open("https://price-api.live/", "_blank");
+//Takes two strings
+//Project string determine which links are available
+//Links strings
+const goToLinks = (project, link) => {
+  switch (project) {
+    case "sauti":
+      if (link === "repo") {
+        window.open("https://github.com/price-api", "_blank");
+      } else {
+        window.open("https://price-api.live/", "_blank");
+      }
+      break;
+    case "fifth":
+      if (link === "repo") {
+        window.open(
+          "https://github.com/buildweek-5th-wheel/React-FE",
+          "_blank"
+        );
+      } else {
+        window.open("https://5th-wheel.now.sh/", "_blank");
+      }
+      break;
+    case "rentech":
+      if (link === "repo") {
+        window.open(
+          "https://github.com/build-week-use-my-tech-stuff-umts/umts-frontend",
+          "_blank"
+        );
+      } else {
+        window.open("https://rentech.netlify.com/login", "_blank");
+      }
+      break;
+    case "bucket":
+      if (link === "repo") {
+        window.open("https://github.com/BW-Bucket-List/back-end", "_blank");
+      } else {
+        window.open(
+          "https://documenter.getpostman.com/view/8666055/SVn3ra65?version=latest",
+          "_blank"
+        );
+      }
+      break;
+    default:
+      break;
   }
-}
-
-function goToFifth(link) {
-  if (link === "repo") {
-    window.open("https://github.com/buildweek-5th-wheel/React-FE", "_blank");
-  } else {
-    window.open("https://5th-wheel.now.sh/", "_blank");
-  }
-}
-
-function goToRentech(link) {
-  if (link === "repo") {
-    window.open(
-      "https://github.com/build-week-use-my-tech-stuff-umts/umts-frontend",
-      "_blank"
-    );
-  } else {
-    window.open("https://rentech.netlify.com/login", "_blank");
-  }
-}
-function goToBucket(link) {
-  if (link === "repo") {
-    window.open("https://github.com/BW-Bucket-List/back-end", "_blank");
-  } else {
-    window.open(
-      "https://documenter.getpostman.com/view/8666055/SVn3ra65?version=latest",
-      "_blank"
-    );
-  }
-}
+};
 
 function SautiModal(props) {
   return (
@@ -261,11 +282,11 @@ function SautiModal(props) {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="warning" onClick={() => goToSauti("proj")}>
+        <Button variant="warning" onClick={() => goToLinks("sauti", "project")}>
           <FaLaptop className="icon-buttons" />
           Explore the Project
         </Button>
-        <Button variant="warning" onClick={() => goToSauti("repo")}>
+        <Button variant="warning" onClick={() => goToLinks("sauti", "repo")}>
           <FaGithub className="icon-buttons" />
           Explore the Repo
         </Button>
@@ -317,11 +338,11 @@ function FifthModal(props) {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="warning" onClick={() => goToFifth("proj")}>
+        <Button variant="warning" onClick={() => goToLinks("fifth", "project")}>
           <FaLaptop className="icon-buttons" />
           Explore the Project
         </Button>
-        <Button variant="warning" onClick={() => goToFifth("repo")}>
+        <Button variant="warning" onClick={() => goToLinks("fifth", "repo")}>
           <FaGithub className="icon-buttons" />
           Explore the Repo
         </Button>
@@ -369,11 +390,14 @@ function RentechModal(props) {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="warning" onClick={() => goToRentech("proj")}>
+        <Button
+          variant="warning"
+          onClick={() => goToLinks("rentech", "project")}
+        >
           <FaLaptop className="icon-buttons" />
           Explore the Project
         </Button>
-        <Button variant="warning" onClick={() => goToRentech("repo")}>
+        <Button variant="warning" onClick={() => goToLinks("rentech", "repo")}>
           <FaGithub className="icon-buttons" />
           Explore The Repo
         </Button>
@@ -419,11 +443,14 @@ function BucketModal(props) {
         </p>
       </Modal.Body>
       <Modal.Footer>
-        <Button variant="warning" onClick={() => goToBucket("proj")}>
+        <Button
+          variant="warning"
+          onClick={() => goToLinks("bucket", "project")}
+        >
           <FaLaptop className="icon-buttons" />
           Explore the Project
         </Button>
-        <Button variant="warning" onClick={() => goToBucket("repo")}>
+        <Button variant="warning" onClick={() => goToLinks("bucket", "repo")}>
           <FaGithub className="icon-buttons" />
           Explore the Repo
         </Button>
