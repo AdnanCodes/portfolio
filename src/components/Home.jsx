@@ -34,8 +34,7 @@ const Home = () => {
             in working in a team and a high-demand environment.
           </p>
           <p>
-            I am currently learning Linux to super charge my development skills
-            and I also started to learn Elixir, and its framework, Phoenix!
+            I am currently working on a full-stack project for a small business.
           </p>
           <p>
             If I am not coding, I like to play video games, read books, cook new
